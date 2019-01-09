@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="css/style.css">
 		<title>Events</title>
 	</head>
@@ -41,7 +42,7 @@
 					require("php/getEvents.php");
 
 					foreach ($events as $event) {
-						echo "<div class='div_singleEvent'".$event['id'].">";
+						echo "<div class='div_singleEvent' id=event_".$event['id'].">";
 							echo "<div class='containerEvent'>";
 								echo "<a href=".$event['url']."><p class='nameEvent'>".$event['title']."</p>";
 								echo "<p class='locationEvent'><label class='label_DescriptionEvent'>Location - </label>".$event['location']."</p>";
@@ -52,5 +53,6 @@
 				?>
 			</div>
 		</div>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
