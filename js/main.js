@@ -10,6 +10,18 @@ $(document).ready(async function(){
 		});
 		await sleep(300);
 	}
+
+	$("#closeImg").click(function() {
+		$("#overlay").css("display", "none");
+		$("#googleMap").css("display", "none");
+	});
+
+	$(window).keydown(function(e) {
+		if(e.which == 27) {	
+			$("#overlay").css("display", "none");
+			$("#googleMap").css("display", "none");
+		}
+	})
 });
 
 function sleep(ms) {

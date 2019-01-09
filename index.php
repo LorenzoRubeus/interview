@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="icon" href="images/logo16x16.png" type="image/png" sizes="16x16">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -42,17 +43,28 @@
 					require("php/getEvents.php");
 
 					foreach ($events as $event) {
+
 						echo "<div class='div_singleEvent' id=event_".$event['id'].">";
 							echo "<div class='containerEvent'>";
 								echo "<a href=".$event['url']."><p class='nameEvent'>".$event['title']."</p>";
 								echo "<p class='locationEvent'><label class='label_DescriptionEvent'>Location - </label>".$event['location']."</p>";
 								echo "<p class='dateEvent'><label class='label_DescriptionEvent'>Date - </label>".$event['date']." at ".$event['time']."</p></a>";
+								echo "<a href='#' class='showMap' onclick=getLocations(".$event['geo']['lat'].",".$event['geo']['lng'].")>Show Map</a>";
 							echo "</div>";
 						echo "</div>";
 					}
 				?>
 			</div>
 		</div>
+
+		<div id="googleMap"></div>
+		<div id="overlay">
+			<img src="images/close.png" id="closeImg">
+			<h3 id="h3Overlay">Or press ESC to go back.</h3>
+		</div>
+
+		<script type="text/javascript" src="js/googleMap.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiejFwnZ9JuaWO4rYBEzTfn64rYeYO47Q"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

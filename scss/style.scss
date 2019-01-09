@@ -172,7 +172,7 @@ a:visited {
 	background-color: white;
 	margin-top: 25px;
 	padding-top: 10px;
-	height: 105px;
+	height: 150px;
 	width: 100%;
 	border: 1px solid rgb(67, 168, 36);
 	right: -1200px;
@@ -208,6 +208,15 @@ a:visited {
 	padding-left: 10px;
 }
 
+.showMap {
+	color: blue !important;
+	padding-left: 10px;
+	letter-spacing: 0.6px;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
 /* ------------ End Events -------------- */
 
 
@@ -219,3 +228,52 @@ a:visited {
 }
 
 /* ------------ End Animations ------------ */
+
+
+/* ------------ Google ----------------- */
+#googleMap {
+	width:600px; 
+	height:600px; 
+	display: none;
+	position: fixed;
+	z-index: 2;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+
+#closeImg {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 50px;
+}
+
+#closeImg:hover {
+	cursor: pointer;
+	width: 52px;
+	height: 52px;
+	transition-duration: 0.3s;
+};
+
+#h3Overlay {
+	color: white;
+	position: absolute;
+	top: 16%;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
