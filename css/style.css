@@ -172,17 +172,16 @@ a:visited {
   width: 28%;
   display: inline-block;
   letter-spacing: 0.8px;
-  background-color: white;
 }
 
-/* line 165, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 .nameEvent {
   letter-spacing: 0.7px;
   text-align: center;
   font-weight: bold;
 }
 
-/* line 171, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 .div_singleEvent {
   position: relative;
   background-color: white;
@@ -194,38 +193,38 @@ a:visited {
   right: -1200px;
 }
 
-/* line 182, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 .div_singleEvent:hover {
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid #0fda87;
   transition-duration: 0.3s;
 }
 
-/* line 188, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
 .containerEvent {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 194, ../scss/style.scss */
+/* line 193, ../scss/style.scss */
 .locationEvent, .dateEvent {
   font-style: italic;
 }
 
-/* line 198, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .label_DescriptionEvent {
   font-weight: bold;
   font-style: italic;
   color: black;
 }
 
-/* line 204, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 .div_singleEvent p {
   margin-top: -5px;
 }
 
-/* line 208, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
 .nameEvent, .locationEvent, .dateEvent {
   padding-left: 10px;
 }
